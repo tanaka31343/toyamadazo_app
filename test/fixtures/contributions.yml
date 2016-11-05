@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  shop_name: MyString
+  address: MyString
+  content: MyText
+  business_hour: 2016-11-05 16:43:40
+  regular_holiday: 2016-11-05 16:43:40
+  url: MyText
+  summary: MyText
+  tel: MyString
+
+two:
+  user_id: 
+  shop_name: MyString
+  address: MyString
+  content: MyText
+  business_hour: 2016-11-05 16:43:40
+  regular_holiday: 2016-11-05 16:43:40
+  url: MyText
+  summary: MyText
+  tel: MyString
