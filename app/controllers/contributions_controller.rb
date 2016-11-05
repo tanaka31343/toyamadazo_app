@@ -1,5 +1,8 @@
 class ContributionsController < ApplicationController
-  before_action :logged_in_user, only: [:create]
+  before_action :logged_in_user, only: [:index, :create]
+
+  def index
+  end
 
   def create
     @contribution = current_user.contributions.build(contribution_params)
