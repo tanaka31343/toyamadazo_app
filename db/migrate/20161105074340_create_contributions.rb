@@ -5,13 +5,14 @@ class CreateContributions < ActiveRecord::Migration
       t.string :shop_name
       t.string :address
       t.text :content
-      t.datetime :business_hour
-      t.datetime :regular_holiday
+      t.string :business_hour
+      t.string :regular_holiday
       t.text :url
       t.text :summary
       t.string :tel
 
       t.timestamps null: false
+      t.index [:user_id, :created_at]
     end
   end
 end

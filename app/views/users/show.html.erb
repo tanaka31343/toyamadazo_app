@@ -7,5 +7,11 @@
     </section>
   </aside>
   <div class="col-md-8">
+    <% if @user.contributions.any? %>
+        <h3>投稿 (<%= @user.contributions.count %>)</h3>
+        <ol class="contributions">
+          <%= render @contributions %>
+        </ol>
+    <% end %>
   </div>
 </div>

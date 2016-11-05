@@ -1,0 +1,16 @@
+<li id="contribution-<%= contribution.id %>">
+  <div>
+    <span class="user">投稿者名：<%= link_to contribution.user.name, contribution.user %></span>
+  </div>
+  <span class="shop">店名：<%= contribution.shop_name %></span>
+  <p>
+    概要：<br>
+    <%= contribution.summary %>
+  </p>
+  <p>
+    営業時間<%= contribution.business_hour %>
+  </p>
+  <span class="timestamp">
+    投稿は <% time_ago_in_words(alertDate-9.hour - contribution.created_at) %> 前.
+  </span>
+</li>

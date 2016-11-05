@@ -1,0 +1,17 @@
+<%= form_for(@contribution) do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <div class="field">
+      <%= f.label :shop_name, "店名" %>
+      <%= f.text_area :shop_name, placeholder: "例：◯◯屋" %>
+    </div>
+    <div class="field">
+      <%= f.label :summary, "概要" %>
+      <%= f.text_area :summary, placeholder: "例：◯◯が美味しい店！" %>
+    </div>
+    <div>
+      <%= f.label :business_hour, "営業時間" %>
+      <%= f.text_field :business_hour, placeholder: "営業時間" %>
+    </div>
+
+    <%= f.submit "Post", class: "btn btn-primary" %>
+<% end %>
